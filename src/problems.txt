@@ -1,0 +1,25 @@
+Java Problems
+
+For each of the numbered problems:
+- State whether the problem occurs at compile-time or run-time
+- Briefly describe what the problem is in plain English
+
+1. Compilation Error: The filename and the public class name are different; therefore Problem should be changed to
+Problem1.
+2. Compilation Error: When initializing int i, in.next() is not an integer type. To fix this in.next() should be
+Integer.parseInt(in.next()) or in.nextInt().
+3. Runtime Error: With int i = 5 / 0 you can't divide anything by zero.
+4. Compilation Error: In the parameter, y is not given a type, so instead of y it should be int y.
+5. Compilation Error: There is no return statement after the if conditional.
+6. Runtime Error: With int i = list.get(0) there is an error because there is nothing at index 0 of ArrayList list when
+int i is initialized. The code new ArrayList<Integer>(5) only initializes the capacity of the ArrayList list to be a
+size of five, it does not actually add the integer five to the ArrayList. To actually add the number five to
+the ArrayList list you would have to do list.add(5);.
+7. Compilation Error: When initializing the variable ch, it is trying to convert a string to a char. The double quotes
+surrounding a is what makes it a string; therefore putting single quotes around a will make it a char, 'a'.
+8. Compilation Error: int j is not initialized/set equal to one, to fix it just do int j = 1.
+9. Compilation Error: When initializing the variable sum, it is trying to convert a double to a float. To properly
+initialize sum as a float you have to include f after the value, float sum = 0.0f;.
+10. Runtime Error: There is an error with printing s1.substring(6, 12) because it is out of bounds. The string s1 only
+has a size of 11 and 10 indexes; therefore trying to access anything past index 10 will be met with an out-of-bounds
+error, such as with 12.
